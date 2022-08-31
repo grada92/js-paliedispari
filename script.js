@@ -1,13 +1,13 @@
 console.log('JS OK ')
-
+/*
 // chiedo di inserire all'utente una parola
 const word = prompt('inserire parola')
 
 console.log(word)
 
+*/
 
-
-
+// Esercizio 2  PARI E DISPARI
 
 //chiedo utente pari o dispari
 const user = prompt('Inserisci pari o dispari');
@@ -29,17 +29,19 @@ function plusNumb(num1, num2) {
 }
     
 const total = plusNumb(number, pc);
-console.log(total);
-    
-    
-    
-    
-    
-function isOddOrEven(plusNumb) {
-        
-    return (numb % 2 === 0) ? 'pari' : 'dispari'; 
+console.log(numb);
+
+// Creo funzione che determina se pari o dispari   
+function isOddOrEven(numb) {
+    if (numb % 2 === 0){
+        return 'pari'
+    }
+
+    return 'dispari';   
 }
     
-if (!isNaN(numb)) {
-    console.log(isOddOrEven(numb));
+let  OddOrEven
+if (!isNaN(total)) {
+    OddOrEven = isOddOrEven(total);
+    console.log(isOddOrEven(total));
 }
