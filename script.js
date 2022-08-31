@@ -2,7 +2,9 @@ console.log('JS OK ')
 
 // Esercizio 1 PALINDROMA
 
+// Chiedo all'utente di inserire una parola
 let word = prompt('inserisci una parola')
+
 let wordReverse = word.split("").reverse().join("");
 
 if (word === wordReverse) {
@@ -10,8 +12,6 @@ if (word === wordReverse) {
 } else {
   console.log("la parola non è palindroma");
 }
-
-
 
 
 // Esercizio 2  PARI E DISPARI
@@ -24,7 +24,7 @@ console.log(user);
 const number = parseInt(prompt('Inserisci numero da 1 a 5'));
 if (number <= 5){
     console.log(number)
-}else console.log('error')
+}else alert('error')
 
     
 // Genero un numero random per il Pc
@@ -42,12 +42,9 @@ function plusNumb(num1, num2) {
     } return 'errore';
     
 }
-
+// Collego il risultato alla funzione
 const total = plusNumb(number, pc);
 console.log(total);
-
-
-
 
 // Creo funzione che determina se pari o dispari   
 function isOddOrEven(plusNumb){
