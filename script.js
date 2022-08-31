@@ -3,6 +3,7 @@ console.log('JS OK ')
 // Esercizio 1 PALINDROMA
 
 // Chiedo all'utente di inserire una parola
+
 let word = prompt('inserisci una parola')
 
 let wordReverse = word.split("").reverse().join("");
@@ -76,7 +77,7 @@ if(user === OddOrEven && total <= 10){
 if (user != OddOrEven && total <= 10){
     result = 'winner pc'
 } else {
-    result = 'error'
+    result = 'error' // condizione per cui non determina un vincitore
 }
 
 console.log(result)
