@@ -2,6 +2,15 @@ console.log('JS OK ')
 
 // Esercizio 1 PALINDROMA
 
+let word = prompt('inserisci una parola')
+let wordReverse = word.split("").reverse().join("");
+
+if (word === wordReverse) {
+  console.log("la parola è palindroma");
+} else {
+  console.log("la parola non è palindroma");
+}
+
 
 
 
@@ -24,6 +33,7 @@ console.log(pc);
     
 
 // Creo funzione Somma tra numero User e Numero Pc
+// inserisco condizione per cui utente deve scegliere solo numeri da 1 a 5
 function plusNumb(num1, num2) {
     if (num1 <= 5){
     const sum = num1 + num2;
