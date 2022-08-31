@@ -24,7 +24,7 @@ console.log(user);
 const number = parseInt(prompt('Inserisci numero da 1 a 5'));
 if (number <= 5){
     console.log(number)
-}else alert('error')
+}else alert('errore , devi inserire un numero da 1 a 5')
 
     
 // Genero un numero random per il Pc
@@ -39,12 +39,17 @@ function plusNumb(num1, num2) {
     const sum = num1 + num2;
     return sum;
 
-    } return 'errore';
+    } return 'Devi inserire un numero da 1 a 5';
+
     
 }
 // Collego il risultato alla funzione
+
 const total = plusNumb(number, pc);
 console.log(total);
+
+
+
 
 // Creo funzione che determina se pari o dispari   
 function isOddOrEven(plusNumb){
@@ -65,11 +70,13 @@ if (!isNaN(total)) {
 
 let result;
 
-if(user === OddOrEven){
+if(user === OddOrEven && total <= 10){
     result = 'winner user'
 }
-else {
+if (user != OddOrEven && total <= 10){
     result = 'winner pc'
+} else {
+    result = 'error'
 }
 
 console.log(result)
